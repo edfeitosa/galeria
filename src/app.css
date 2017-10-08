@@ -1,0 +1,204 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background-color: #d7dce0;
+	font-family: Verdana;
+	font-size: 1rem;
+	background-image: url("../img/bg-imagem.jpg");
+}
+
+#header {
+	background-color: #be0b29;
+	padding: 5px 0px;
+	color: #fff;
+	text-align: right;
+	font-size: 0.75rem;
+}
+
+#titulo {
+	width: 100%;
+	background-color: #ef2240;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+.clear {
+	clear: both;
+	display: block;
+}
+
+.noPadding {
+	padding: 0px !important;
+}
+
+.container {
+	width: 1024px;
+	margin: 0px auto;
+	padding: 20px 0px;
+}
+
+.cardTumblr {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+	width: 22.5%;
+	margin: 0px 10px 10px 0px;
+	float: left;
+	font-size: 0.6rem;
+	font-weight: bold;
+	color: #999;
+}
+
+.cardTumblr .imagem {
+	float: left;
+	width: 100%;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.cardTumblr .imagem img {
+	width: 100%;
+}
+
+.cardTumblr .info {
+	text-align: right;
+}
+
+.material-icons {
+	font-size: 0.75rem !important;
+}
+
+/* cards */
+#bg-card {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	display: none;
+}
+
+#bg-card #card {
+	position: absolute;
+	width: 600px;
+	left: 50%;
+	margin: 90px 0px 0px -301px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+    box-shadow: 0px 0px 7px #000;
+    -webkit-box-shadow: 0px 0px 7px #000;
+    -moz-box-shadow: 0px 0px 7px #000;
+}
+
+#bg-card #card #img-card {
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 3px 3px 0px 0px;
+	overflow: hidden;
+}
+
+#bg-card #card #informacoes {
+	text-align: right;
+	font-size: 0.75rem;
+	color: #999;
+	font-weight: bold;
+}
+
+#bg-card #card #fechar {
+	position: relative;
+	padding: 10px 0px;
+	background-color: #be0b29;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 100;
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
+	cursor: pointer;
+	border-radius: 0px 0px 3px 3px;
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		width: 94%;
+		padding: 20px 10px;
+	}
+	
+	.cardTumblr {
+		width: 20%;
+	}
+	
+	#bg-card #card {
+		margin: 50px 0px 0px -306px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 94%;
+		padding: 20px 10px;
+	}
+	
+	.cardTumblr {
+		width: 26%;
+	}
+	
+	#bg-card #card {
+		margin: 10px 0px 0px -306px;
+	}
+}
+
+@media screen and (max-width: 718px) {
+	.container {
+		width: 80%;
+		padding: 20px 10px;
+	}
+	
+	.cardTumblr {
+		width: 25%;
+	}
+	
+	#bg-card #card {
+		position: relative;
+		width: 70%;
+		top: 20px;
+		left: 0px;
+		margin: 0px auto;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.container {
+		width: 94%;
+		padding: 15px 10px;
+	}
+	
+	.cardTumblr {
+		width: 92%;
+	}
+	
+	#bg-card #card {
+		position: relative;
+		width: 90%;
+		margin: 0px auto;
+		top: 20px;
+	}
+	
+	#bg-card #card #informacoes {
+		font-size: 0.75rem !important;
+	}
+}
